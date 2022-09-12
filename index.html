@@ -3,62 +3,46 @@
     <head>
         <title>WEB - html</title>
         <meta charset="utf-8">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3CM1GY8MP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P3CM1GY8MP');
-</script>
+        <style>
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            h1 {
+                font-size: 45px;
+               text-align: center;
+            }
+        </style>
     </head>
 
     <body>
-        <h1><a href="index.html" title="index_go-home"> WEB </a> </h1>
+        <h1><a href="index.html"> WEB </a> </h1>
         <ol>
-            <li><a href="1.html" title="about html">HTML</a></li>
-            <li><a href="2.html" title="about CSS">CSS</a></li>
-            <li><a href="3.html" title="about JavaScript">JavaScript</a></li>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
         </ol>
+
+        <!--
+        <ol>
+            <li><a href="1.html" title="about html"><font color="red">HTML</font></a></li>
+            <li><a href="2.html" title="about CSS"><font color="red">CSS</font></a></li>
+            <li><a href="3.html" title="about JavaScript"><font color="red">JavaScript</font></a></li>
+        </ol>
+        -->
+
         <h2>HTML</h2>
         <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the documents.</p>
-        
-                <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-1-jfvysdi68k.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
-        
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/631c90cd54f06e12d893e123/1gcjpb8jk';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-        
-        
-    </body>
-</html>
+
+        <!--
+**font로 색깔을 바꾸기는 했지만, 저렇게 하나씩하는것에는 한계가 있다. 
+
+**한계를 넘기위해서는 다른 해결책이 필요한데 이것이 바로 Cascading Style Sheets (CSS) 이다 
+
+**「 a{} 」는 '선택자'라고 불림. (Selector)
+            지정된효과를 Declaration; 태그안에 그것은 선택자를 쓸필요가없음
+
+**스타일 태그(CSS) vs 스타일 속성_property;value(HTML)
+
+**tag selector<class selector<id selector
+-->
