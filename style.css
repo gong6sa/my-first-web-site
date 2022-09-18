@@ -26,6 +26,8 @@ h1{
     padding-left:25px;
 
 }
+img { display:block;
+    margin:auto;}
 @media(max-width:800px){
     #grid{
         display: block;
