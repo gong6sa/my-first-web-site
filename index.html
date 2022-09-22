@@ -8,6 +8,16 @@
 
     <body>
         <h1><a href="index.html"> WEB </a> </h1>
+
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+
         <ol>
             <li><a href="1.html">HTML</a></li>
             <li><a href="2.html">CSS</a></li>
@@ -34,5 +44,7 @@
 **포괄적인것 보다 구체적인것의 우선순위가 높다.
 
 **programing언어는 시간의 순서에 따라 움직이는 작동체계를 만드는 언어이다.
+ex)document.querySelector('body').style.backgroundColor='white'
+이미 'body를 선택하고 난 후에 그 배경색을 흰색으로 한다' 라면서 program에 대한 이해를 하고있음!
 사용자와 상화작용을 함.
 -->
