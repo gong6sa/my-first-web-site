@@ -9,13 +9,17 @@
     <body>
         <h1><a href="index.html"> WEB </a> </h1>
 
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
+        <input id="nightday" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+        }
         ">
 
     <div id="grid">
@@ -32,25 +36,27 @@
     </body>
 </html>
 
+
+<!--
+    #toggle:한개의 버튼으로 계속 바뀌는 모드!
+-->
+
+<!--
+    #중복된 것은 끝까지 따라가서 제거해라 -refactoring-
+
+    변수사용!
+    this!
+-->
+
+<!--
+    긴 문법을 사용할 때에는 tap을 사용하여 끝 따옴표를 떼어 놓자(실수 가능성 있음!)
+    css의 선택자=body 
+    body태그의 style속성을 어떻게 JS으로 넣을 수 있는가.
+-->
+
 <!--
     문제상황: night버튼을 클릭할 때 앵커<a>에 속해있는 문자열들도 흰색으로 만들고 싶은데 
     앵커를 지정하는 선택자를 모르겠음.
     해결: a태그에는 브라우저의 기본 스타일로 color속성이 지정되어있음.
     so, body색에 상속을 받도록 CSS코드인 color:inherit을 마지막에 써줘야됨
--->
-
-
-<!--
-    긴 문법을 사용할 때에는 tap을 사용하여 끝 따옴표를 떼어 놓자(실수 가능성 있음!)
-
-    css의 선택자=body 
-    body태그의 style속성을 어떻게 JS으로 넣을 수 있는가.
-
--->
-
-<!--
-    .style.backgroundColor = 'black';">
-    -> style은 배경색을 검정으로 처리한다. 
-    'black'으로 써야하는 이유는 ""으로 처리시 onclick에 써준 ""가 영향을 받게 되므로 ''으로 처리해야 함.
-    여기서 C가 대문자인 것은 자바스크립트에서는 -다음에 나오는 것을 써줄 때 대문자를 써야한다고 함.
 -->

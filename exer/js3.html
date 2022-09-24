@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+</head>
+<body>
+    <h1>Comparison operators & Boolean</h1>
+    <h2>===</h2>
+    <h3>1===1</h3>
+    <script>
+        document.write(1===1);
+    </script>
+
+    <h3>1===2</h3>
+    <script>
+        document.write(1===2);
+    </script>
+
+    <h3>1&lt;2</h3>
+    <script>
+        document.write(1<2);
+    </script>
+
+</body>
+</html>
+
+<!--
+    '==='비교연산자! True와 False를 만들어 내는 연산자.
+    *True와 False라는 이것은 'Boolean'이라는 데이터 타입이다.
+    단순 반복으로부터의 해방
+-->
+
+<!--
+    #HTML 특수코드(HTML Character Entity_HTML 문자 단위 엔티티)
+        *&lt
+            A<B로 사용!
+            html에서는 <>기호(특수문자, Entity Name)는 태그의 의미를 주기 때문에 저 표현을 쓴다.
+        *&gt
+            A>B로 사용
+        *&nbsp;
+            ' '(공백, space한칸)
+            공백 문자 한칸을 의미
+        *&amp;
+            &(앰퍼샌드)
+            '&'의 표현과 javascript와 java에서 and연산기호로 사용되기도 함.
+        *&quot; 
+            "(큰 따옴표 하나)
+            쌍따옴표는 HTML에서 특정 속성 값들을 묶기 위한 용도로 사용되기 때문에 쌍따옴표를 화면에 출력하려면 &quot;를 사용.
+        (Ex. <a href="javascript:test("hello");return false;">테스트 링크</a> 와 같이 사용 시, href 속성 안에 또다른 따옴표가 존재하므로 문제가 발생. HTML 파싱 시, test(" 의 따옴표가 href=" 시작 따옴표와 쌍을 이룬다고 판단하여 오류 발생.
+         이럴때 <a href="javascript:test(&quot;hello&quot;);return false;"> 사용.
+        또는 <a href="javascript:test(\"hello\");return false;">와 같은 형태도 사용 가능함.)   
+-->
