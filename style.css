@@ -2,8 +2,8 @@ body{
     margin:0;
 }
 a{
-    color:black;
     color:inherit;
+    color:blue;
     text-decoration:none;
     font-weight: bolder;
 }
